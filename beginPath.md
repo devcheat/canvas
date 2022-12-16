@@ -1,0 +1,23 @@
+# HTML canvas `beginPath()` Method
+``` html
+<canvas id="mc21" width="300" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+    var c = document.getElementById("mc21");
+    var ctx = c.getContext("2d");
+
+    ctx.beginPath();
+    ctx.lineWidth = "5";
+    ctx.strokeStyle = "green"; // Green path
+    ctx.moveTo(0, 75);
+    ctx.lineTo(250, 75);
+    ctx.stroke(); // Draw it
+
+    ctx.beginPath();
+    ctx.strokeStyle = "purple"; // Purple path
+    ctx.moveTo(50, 0);
+    ctx.lineTo(150, 130);
+    ctx.stroke(); // Draw it
+</script>
+```
